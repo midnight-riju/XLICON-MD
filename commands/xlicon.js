@@ -11,7 +11,7 @@ var videotime = 36000 // 300 min
 var dlsize = 1000 // 1000mb
 
 cmd({
-            pattern: "song2",
+            pattern: "sng",
             react: "🎧",
             alias :["son2","𝚢𝚝2"],
             desc: "Downloads audio from youtube.",
@@ -37,7 +37,7 @@ if (text.startsWith("https://youtube.com/shorts/")) {
                },
                 caption: `
 
-🎧 𝐗𝐋𝐈𝐂𝐎𝐍-𝐌𝐃 𝗦𝗢𝗡𝗚 𝗗𝗢𝗪𝗡𝗟𝗢𝗗𝗘𝗥🎧
+🎧❱⏤͟͟͞ 𝗥𝐈𝐉𝐔•✘❱⏤͟͟͞ 𝐌𝐃 𝗦𝗢𝗡𝗚 𝗗𝗢𝗪𝗡𝗟𝗢𝗗𝗘𝗥🎧
  ◨┉━━━━╚◭☬◮╝━━━━━┉◧
 
 ╏🎀 *Title:* ${anu.title}
@@ -165,7 +165,7 @@ if(!msg.quoted) return
 if (!msg.quoted.isBaileys ) return 
 if(!msg.quoted.caption) return console.log('ew')
 text = msg.quoted.caption
-if (!text.includes('🎧 𝐗𝐋𝐈𝐂𝐎𝐍-𝐌𝐃 𝗦𝗢𝗡𝗚 𝗗𝗢𝗪𝗡𝗟𝗢𝗗𝗘𝗥 🎧'))  return 
+if (!text.includes('🎧 ❱⏤͟͟͞ 𝗥𝐈𝐉𝐔•✘❱⏤͟͟͞ 𝐌𝐃 𝗦𝗢𝗡𝗚 𝗗𝗢𝗪𝗡𝗟𝗢𝗗𝗘𝗥 🎧'))  return 
 text = text.split('╏📡 *Url* : ')[1].split('\n')[0]		
 if(!text) return 
 await Void.sendMessage(citel.chat, { react: {  text: "⬇️", key: msg.key } } )			
@@ -211,7 +211,7 @@ await Void.sendMessage(citel.chat, { react: {  text: "⬇️", key: msg.key } } 
                     document: fs.readFileSync(`./${randomName}`),
                     mimetype: 'audio/mpeg',
                     fileName: titleYt + ".mp3",
-		    caption: `* ©𝐗𝐋𝐈𝐂𝐎𝐍-𝐌𝐃`,       
+		    caption: `* ❱⏤͟͟͞ 𝗥𝐈𝐉𝐔•✘❱⏤͟͟͞ 𝐌𝐃`,       
                     headerType: 4,
                    
                 }
